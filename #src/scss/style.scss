@@ -1,0 +1,74 @@
+@import "mixins.scss";
+@import "fonts";
+
+
+/*шрифт по умолчанию */
+$fontfamily: Roboto;
+
+
+/*переменные*/
+
+@import "null";
+
+body {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  justify-content: flex-start;
+  
+}
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@import "header";
+
+._container {
+  max-width: 1280px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (max-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (max-width: 992px) {
+    max-width: 960px;
+  }
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+  @media (max-width: 576px) {
+    max-width: 540px;
+  }
+  @media (max-width: 1200px)
+  {
+    max-width: 1140px;
+  }
+  @media (max-width: 992px) {
+    max-width: 960px;
+  }
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+  @media (max-width: 576px) {
+    max-width: 540px;
+  }
+}
+

@@ -1,0 +1,193 @@
+.rating {
+  &__colum {
+    flex: 1 1 33.333%;
+  }
+  &__advertising {
+    text-align: center;
+    display: block;
+    padding: 50px 0;
+    width: 100%;
+    background: linear-gradient(90.94deg, #FF4D4D 0%, #FF4D00 100%);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+}
+.rating__title {
+
+}
+.title {
+
+}
+
+.rating-wrapper {
+
+}
+.col-md-3 {
+
+}
+.rating__img {
+
+}
+.img-fluid {
+
+}
+.rating__rate-box {
+
+}
+
+.rating__inner {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.rating__table {
+  width: 100%;
+}
+.rating__row {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ACACAC;
+}
+.rate-box {
+  display: flex;
+  flex-direction: column;
+}
+.rating-box__item1 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #383838;
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 4px;
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: -30px;
+  }
+  &_rate::before {
+    content: "";
+    background-image: url("../img/icons/rating/percent.png");
+    width: 18px;
+    height: 18px;
+  }
+  &_rate::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/rating/cil_cash.png");
+    width: 20px;
+    height: 18px;
+    top: 0;
+    left: -61px;
+  }
+  &_sum::before {
+    content: "";
+    background-image: url("../img/icons/rating/sum.png");
+    width: 19px;
+    height: 14px;
+
+  }
+}
+
+.rating-box__item2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+
+  margin-bottom: 4px;
+  &.icon {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icons/rating/bi_credit-card-2-back.png");
+      width: 20px;
+      height: 18px;
+      top: 0;
+      left: -31px;
+    }
+  }
+}
+.rating-box__item3 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #383838;
+
+
+  &.icon {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icons/rating/clarity_bank-solid.png");
+      width: 20px;
+      height: 18px;
+      top: 0;
+      left: -31px;
+    }
+  }
+}
+.sum-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratting__button-box {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+
+}
+.ratting__btn {
+ padding:  10px 40px;
+}
+
+.ratting__btn-1 {
+margin-bottom: 10px;
+  @media (max-width:992px) {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .selection__title {
+    align-self: flex-start;
+  }
+  .selection__form input {
+    max-width: 100%;
+  }
+  .rating__row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rating__inner {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+}
+@media (max-width: 768px) {
+  .selection-btn {
+    padding: 25px 10px;
+    width: 100%;
+  }
+  .rating__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+
+}

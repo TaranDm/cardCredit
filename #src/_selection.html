@@ -1,0 +1,39 @@
+<section class="selection">
+    <div class="selection__container _container">
+        <h2 class="selection__title title">Подбор</h2>
+            <form id="myForm" class="selection__form  col-xs-12" name="contact_form"  action="" method="post">
+                <div class="row selection__wrapper">
+                    <div class="col form-group">
+                        <input   class="required form-control" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" id="datepicker" required>
+                        <label class="form-label">Дата рождения</label>
+                    </div>
+                    <div class="col form-group">
+                        <input class="required form-control"  type="text" placeholder="" name="city" required>
+                        <label class="form-label">Город</label>
+                    </div>
+                    <div id="app" class="col form-group">
+                        <input ref="input" v-currency="{currency: 'P  ', locale: 'rus'}" v-model="value1" name="income" class="required form-control" required type="text">
+                        <label class="form-label">Официальная зарплата</label>
+                    </div>
+                    <div class="col form-group">
+                        <button type="submit" class="btn orange-btn selection-btn">Подобрать</button>
+                </div>
+
+                </div>
+            </form>
+        <div class="selection__search search"></div>
+        <p>
+            <a class="search__link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Поиск продукта
+            </a>
+        </p>
+
+        <div class="collapse search__wrapper" id="collapseExample">
+            <div class="search__group input-group-prepend">
+                <button class="search__button" type="button" id="button-addon1"></button>
+                <input type="text" class="search__entry-field" placeholder="Поиск по финансовым продуктам" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+        </div></div>
+
+</section>

@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
+  color: #383838;
   justify-content: flex-start;
   
 }
@@ -57,19 +57,7 @@ a {
   @media (max-width: 576px) {
     max-width: 540px;
   }
-  @media (max-width: 1200px)
-  {
-    max-width: 1140px;
-  }
-  @media (max-width: 992px) {
-    max-width: 960px;
-  }
-  @media (max-width: 768px) {
-    max-width: 720px;
-  }
-  @media (max-width: 576px) {
-    max-width: 540px;
-  }
+
   @media (max-width: 468px) {
     max-width: 100%;
     padding: 0  10px;
@@ -77,14 +65,19 @@ a {
   @media (max-width : 360px) {
   }
 }
-input {
+input, select, textarea {
+  font-family: Roboto, sans-serif;
   border: 3px solid rgba(56, 56, 56, 0.6)!important;
   border-radius: 6px;
   &:focus, &:focus {
-    border: 5px solid rgba(56, 56, 56, 0.6)!important;
+    background-color: rgba(225, 225, 225, 0.6)!important;
     box-shadow: none !important;
   }
 }
+input[placeholder] {
+  padding: 10px 20px;
+}
+
 .btn {
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
@@ -92,10 +85,10 @@ input {
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-
+  border-radius: 6px;
+  display: block;
 }
 .orange-btn {
-  border-radius: 6px;
   background: linear-gradient(90.94deg, #FF4D4D 0%, #FF4D00 100%);
   &:hover, &:focus {
     transition: all 0.3s ease 0s;
@@ -107,6 +100,10 @@ input {
     box-shadow: 0px 6px 6px #FF4D4D, inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
   }
+}
+.btn-standard{
+  padding: 25px 0;
+  width: 300px;
 }
 .big-btn {
   display: block;
@@ -126,5 +123,17 @@ input {
     color: #FF4D4D;
   }
 }
-@import "selction";
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+@import "selection";
 @import "rating";
+@import "blog";
+@import "footer";
+@import "application-form";
+@import "product-page";
+@import "reviews-form";
+@import "blog-page";
+

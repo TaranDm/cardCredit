@@ -1,17 +1,45 @@
 .rating {
+  &__container {
+    margin-top: 50px;
+  }
   &__colum {
     flex: 1 1 33.333%;
+    .name-bank {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+
+      color: #000000;
+    }
   }
   &__advertising {
-    text-align: center;
-    display: block;
-    padding: 50px 0;
-    width: 100%;
-    background: linear-gradient(90.94deg, #FF4D4D 0%, #FF4D00 100%);
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    color: #FFFFFF;
+
+    margin-bottom: 60px;
+  }
+  /*рекламный блог на странице мои заявки*/
+  .my-applications {
+    margin-bottom: 60px;
+    margin-top: 125px;
+  }
+}
+.advertising {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(90.94deg, #FF4D4D 0%, #FF4D00 100%);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding: 60px 0;
+  @media (max-width: 768px) {
+    height: 70px;
+    margin-top: 40px;
+  }
+  @media (max-width: 468px) {
+    height: 50px;
+    margin-top: 20px;
   }
 }
 .rating__title {
@@ -143,12 +171,11 @@
   display: flex;
   flex-direction: column;
   width: max-content;
-
 }
 .ratting__btn {
- padding:  10px 40px;
+ padding:  10px 0;
+  min-width: 257px;
 }
-
 .ratting__btn-1 {
 margin-bottom: 10px;
   @media (max-width:992px) {

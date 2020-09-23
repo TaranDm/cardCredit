@@ -1,0 +1,118 @@
+.application-form {
+  &__container {
+    padding-top: 61px;
+    @media (max-width: 468px) {
+      padding-top: 31px;
+      padding-bottom: 80px;
+    }
+  }
+  form {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  &__title {
+  }
+  &__group {
+
+
+  }
+  &__item{
+    margin: 0 auto;
+    margin-bottom: 31px;
+
+  }
+  &__input{
+    border-bottom:  1px solid rgba(56, 56, 56, 0.6 ) !important;
+    border-radius: 0%;
+    font-size: 22px;
+    line-height: 26px;
+    color: #383838;
+
+    &:focus, &:focus {
+      border: none !important;
+      border-bottom:  1px solid rgba(56, 56, 56, 0.6 ) !important;
+      box-shadow: none !important;
+    }
+  }
+  label {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__title-group {
+    margin: 40px auto;
+
+  }
+  &__sum-credit {
+
+  }
+  &__btn {
+
+    padding:25px 65px;
+    margin: 0 auto;
+  }
+  &__advertising {
+    margin:170px 0 80px 0;
+  }
+}
+
+.group-title {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.item-form-application {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+
+
+  &__consent {
+    font-size: 13px !important;
+    line-height: 15px !important;
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 43px;
+    margin-top: 25px;
+    max-width: 390px;
+    position: relative;
+    @media (max-width: 768px) {
+      max-width: 325px;
+  }
+    @media (max-width: 468px) {
+      max-width: 230px;
+    }
+  }
+  input[type=checkbox]{display: none;}
+
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    position: absolute;
+    top: 15px;
+    left: -31px;
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 16px;
+    margin: -2px 5px 0 0;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: color ease .3s;
+    -o-transition: color ease .3s;
+    transition: color ease .3s;
+  }
+  input[type=checkbox]:checked + label:before {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+
+

@@ -1,5 +1,7 @@
 $(document).ready(function () {
     "use strict";
+   /*=======================================*/
+/*Function for hiding and opening the search__link Block when scrolling*/
     $('#myCollapsible').collapse({
         toggle: true,
     });
@@ -7,8 +9,6 @@ $(document).ready(function () {
         $(this).hide();
         $('.search__group').show();
     });
-   /*=======================================*/
-
     function is_shown(target) {
         var wt = $(window).scrollTop();
         var wh = $(window).height();
@@ -27,6 +27,7 @@ $(document).ready(function () {
         }
     });
     /*=======================================*/
+    /*========Block "selection" Form Validation===========*/
     $('#myForm').validate({
         rules: {
             date: {

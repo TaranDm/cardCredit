@@ -1,0 +1,91 @@
+.blog-entry {
+
+  &__content {
+
+  }
+  &__page-blog {
+
+  }
+
+}
+
+.page-blog {
+  &__wrapper {
+
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+  &__title {
+
+  }
+  &__item {
+      flex: 1 1 45%;
+    margin-right: 20px;
+    margin-bottom: 62px;
+    }
+}
+
+.site-bar {
+
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 31px;
+      top: -3px;
+      left: -20px;
+      background-color: #ff4d4d;
+    };
+
+  }
+
+  &__rating-box {
+
+  }
+}
+
+.rating-box {
+  background: rgba(56, 56, 56, 0.1);
+  border-radius: 6px;
+
+  padding: 20px;
+
+
+  &__item {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.rating-item {
+  display: flex;
+  .star-rating__wrapper{
+    margin-left: 35px;
+  }
+  &__rating-lvl {
+  }
+  &__icon {
+  }
+  &__name {
+  }
+  &__name-bank {
+
+  }
+  &__review {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+
+  }
+}
+
+
+
+

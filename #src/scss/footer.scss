@@ -1,0 +1,100 @@
+.footer {
+
+  background: #434A54;
+  color: #9BA2AC;
+
+
+}
+.footer__col {
+  display: flex;
+  font-size: 16px;
+  padding: 36px 64px 30px 15px;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-right: 15px;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  margin-bottom: 0;
+  @media (max-width: 1200px) {
+   flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    margin-right: 30px;
+    @media (max-width: 1200px) {
+      margin-bottom: 10px}
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  a {
+    color: #9BA2AC;
+    font-size: 20px;
+  }
+}
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  .btn {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: #515965;
+    border-radius: 6px;
+    color: #9BA2AC;
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding: 10px 40px;
+    min-width: 216px;
+
+    i {
+      margin-right: 12px;
+    }
+
+    .fa-apple {
+      font-size: 32px;
+    }
+
+    .fa-google-play {
+      font-size: 26px;
+    }
+  }
+}
+
+.footer__social {
+
+  display: flex;
+  margin-bottom: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+
+  li {
+    margin-right: 16px;
+    @media (max-width: 768px) {
+      margin-right: 50px;
+    }
+
+    }
+  .facebook {
+    @media (max-width: 768px) {
+      margin-right: 0px;
+    }
+
+
+    a {
+      color: #9BA2AC;
+      font-size: 34px;
+    }
+  }
+}

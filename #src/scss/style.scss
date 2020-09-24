@@ -26,6 +26,9 @@ a {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  &:focus {
+    color: #ffffff;
+  }
 }
 
 .wrapper {
@@ -127,6 +130,9 @@ input[placeholder] {
   pointer-events: none;
   cursor: default;
 }
+svg{
+  vertical-align: text-top !important;
+}
 
 @import "selection";
 @import "rating";
@@ -136,4 +142,5 @@ input[placeholder] {
 @import "product-page";
 @import "reviews-form";
 @import "blog-page";
+@import "full-blog";
 

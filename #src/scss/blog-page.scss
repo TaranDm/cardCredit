@@ -1,34 +1,53 @@
 .blog-entry {
-
-  &__content {
-
-  }
-  &__page-blog {
-
+  &__container {
+    padding-top: 100px;
   }
 
+
+  &__advertising {
+    margin: 60px 0;
+  }
+  .column-1{
+    @media (max-width: 768px) {
+      //order: 2;
+    }
+  }
+  .column-2{
+    @media (max-width: 768px) {
+      //order: 1;
+    }
+  }
 }
 
 .page-blog {
   &__wrapper {
-
       display: flex;
       flex-wrap: wrap;
 
   }
   &__title {
+    margin-bottom: -20px;
 
   }
   &__item {
       flex: 1 1 45%;
     margin-right: 20px;
-    margin-bottom: 62px;
+    margin-top: 62px;
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+      margin-right: 0px;
     }
+    }
+  &__pagination {
+    margin-top: 16px;
+  }
 }
 
 .site-bar {
 
   &__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -46,8 +65,16 @@
   }
 
   &__rating-box {
+    @media (max-width: 1200px) {
+      max-width: 400px;
+      margin: 0 auto;
+
+    }
 
   }
+}
+.rating-wrap {
+  margin-bottom: 50px ;
 }
 
 .rating-box {
@@ -63,20 +90,59 @@
       margin-bottom: 0;
     }
   }
+  .all-application {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #383838;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
 }
 .rating-item {
-  display: flex;
-  .star-rating__wrapper{
-    margin-left: 35px;
+  a {
+    display: flex;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+    .star-rating__wrapper{
+      margin-left: 35px;
+      font-size: inherit;
+      color: black;
+    }
   }
+
   &__rating-lvl {
   }
   &__icon {
   }
   &__name {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    @media (max-width: 1200px) {
+      margin-left: 20px;
+    }
+
+    /* Текст италик */
+
+    color: #383838;
   }
   &__name-bank {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #383838;
 
+    &:hover, &:focus {
+      color: #FF4D4D;
+    }
   }
   &__review {
     font-weight: 300;
@@ -84,7 +150,25 @@
     line-height: 15px;
 
   }
-}
+  &__date-application {
+    margin-left: 20px;
+      time {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        color: #383838;
+      }
+    }
+  }
+  .star-rating__wrapper {
+    span{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
 
 
 

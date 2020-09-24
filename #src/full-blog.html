@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Full blog</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container _container">
+            <div class="row justify-content-between">
+                <div> <a href="index.html" class="header__logo"><img src="img/icons/logo-Index.svg" alt=""></a>
+                </div>
+                <button class="header__button btn btn-header">Вренуться на главную страницу</button>
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <div class="menu__applications">
+                            <div class="">
+                                <a class="menu__link" href=""><span class="menu__item">Мои заявки</span><i><span class="menu__count">1</span></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="selection">
+        <div class="selection__container _container">
+            <h2 class="selection__title title">Подбор</h2>
+            <form id="myForm" class="selection__form  col-xs-12" name="contact_form"  action="" method="post">
+                <div class="row selection__wrapper">
+                    <div class="col form-group">
+                        <input   class="required form-control" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" id="datepicker" required>
+                        <label class="form-label">Дата рождения</label>
+                    </div>
+                    <div class="col form-group">
+                        <input class="required form-control"  type="text" placeholder="" name="city" required>
+                        <label class="form-label">Город</label>
+                    </div>
+                    <div id="app" class="col form-group">
+                        <input ref="input" v-currency="{currency: 'P  ', locale: 'rus'}" v-model="value1" name="income" class="required form-control" required type="text">
+                        <label class="form-label">Официальная зарплата</label>
+                    </div>
+                    <div class="col selection__btn-box">
+                        <a href="search-products.html" type="submit" class="btn orange-btn selection-btn">Подобрать</a>
+                    </div>
+
+                </div>
+            </form>
+            <div class="selection__search search"></div>
+            <p>
+                <a class="search__link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Поиск продукта
+                </a>
+            </p>
+
+            <div class="collapse search__wrapper" id="collapseExample">
+                <div class="search__group input-group-prepend">
+                    <button class="search__button" type="button" id="button-addon1"></button>
+                    <input type="text" class="search__entry-field" placeholder="Поиск по финансовым продуктам" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="full-blog-page">
+        <div class="full-blog-page__container _container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="full-blog">
+                        <h2 class="full-blog__title title">Записи в блоге</h2>
+                        <time class="full-blog__date" datetime="2020-09-19">19.09.2020</time>
+                        <div class="full-blog__slider blog-slider">
+                            <div class="blog-slider__wrapper">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                           <p class="blog-slider__text">
+                                               С учётом сложившейся международной обстановки, семантический разбор внешних противодействий способствует повышению качества новых предложений. Как принято считать, представители современных социальных резервов, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут представлены в исключительно положительном свете. Принимая во внимание показатели успешности, курс на социально-ориентированный национальный проект создаёт предпосылки для поэтапного и последовательного развития общества. Каждый из нас понимает очевидную вещь: консультация с широким активом напрямую зависит от экономической целесообразности принимаемых решений. Тщательные исследования конкурентов являются только методом политического участия и своевременно верифицированы. Также как разбавленное изрядной долей эмпатии, рациональное мышление, в своём классическом представлении, допускает внедрение направлений прогрессивного развития. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий обеспечивает актуальность модели развития. Повседневная практика показывает, что повышение уровня гражданского сознания требует анализа укрепления моральных ценностей. В частности, внедрение современных методик, в своём классическом представлении, допускает внедрение направлений прогрессивного развития. Разнообразный и богатый опыт говорит нам, что консультация с широким активом говорит о возможностях дальнейших направлений развития. С другой стороны, укрепление и развитие внутренней структуры играет важную роль в формировании соответствующих условий активизации. Кстати,  явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям. Как принято считать, стремящиеся вытеснить традиционное производство, нанотехнологии обнародованы! А ещё стремящиеся вытеснить традиционное производство, нанотехнологии призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно! Прежде всего, высококачественный прототип будущего проекта обеспечивает широкому кругу (специалистов) участие в формировании переосмысления внешнеэкономических политик. Принимая во внимание показатели успешности, синтетическое тестирование обеспечивает актуальность своевременного выполнения сверхзадачи. Задача организации, в особенности же повышение уровня гражданского сознания предопределяет высокую востребованность новых предложений. Разнообразный и богатый опыт говорит нам, что начало повседневной работы по формированию позиции не даёт нам иного выбора, кроме определения направлений прогрессивного развития. А также активно развивающиеся страны третьего мира и по сей день остаются уделом либералов, которые жаждут быть преданы социально-демократической анафеме. Разнообразный и богатый опыт говорит нам, что понимание сути ресурсосберегающих технологий требует анализа новых принципов формирования материально-технической и кадровой базы. Принимая во внимание показатели успешности, разбавленное изрядной долей эмпатии, рациональное мышление играет важную роль в формировании стандартных.
+                                           </p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="blog-slider__text">
+                                                С учётом сложившейся международной обстановки, семантический разбор внешних противодействий способствует повышению качества новых предложений. Как принято считать, представители современных социальных резервов, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут представлены в исключительно положительном свете. Принимая во внимание показатели успешности, курс на социально-ориентированный национальный проект создаёт предпосылки для поэтапного и последовательного развития общества. Каждый из нас понимает очевидную вещь: консультация с широким активом напрямую зависит от экономической целесообразности принимаемых решений. Тщательные исследования конкурентов являются только методом политического участия и своевременно верифицированы. Также как разбавленное изрядной долей эмпатии, рациональное мышление, в своём классическом представлении, допускает внедрение направлений прогрессивного развития. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий обеспечивает актуальность модели развития. Повседневная практика показывает, что повышение уровня гражданского сознания требует анализа укрепления моральных ценностей. В частности, внедрение современных методик, в своём классическом представлении, допускает внедрение направлений прогрессивного развития. Разнообразный и богатый опыт говорит нам, что консультация с широким активом говорит о возможностях дальнейших направлений развития. С другой стороны, укрепление и развитие внутренней структуры играет важную роль в формировании соответствующих условий активизации. Кстати,  явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям. Как принято считать, стремящиеся вытеснить традиционное производство, нанотехнологии обнародованы! А ещё стремящиеся вытеснить традиционное производство, нанотехнологии призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно! Прежде всего, высококачественный прототип будущего проекта обеспечивает широкому кругу (специалистов) участие в формировании переосмысления внешнеэкономических политик. Принимая во внимание показатели успешности, синтетическое тестирование обеспечивает актуальность своевременного выполнения сверхзадачи. Задача организации, в особенности же повышение уровня гражданского сознания предопределяет высокую востребованность новых предложений. Разнообразный и богатый опыт говорит нам, что начало повседневной работы по формированию позиции не даёт нам иного выбора, кроме определения направлений прогрессивного развития. А также активно развивающиеся страны третьего мира и по сей день остаются уделом либералов, которые жаждут быть преданы социально-демократической анафеме. Разнообразный и богатый опыт говорит нам, что понимание сути ресурсосберегающих технологий требует анализа новых принципов формирования материально-технической и кадровой базы. Принимая во внимание показатели успешности, разбавленное изрядной долей эмпатии, рациональное мышление играет важную роль в формировании стандартных.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-form__pagination">
+                                    <nav>
+                                        <ul class="pagination pagination-lg">
+                                            <li class="page-item">
+                                                <a class="page-link fas fa-angle-left" href="#carouselExampleControls" role="button" data-slide="prev" role="button"  tabindex="-1"></a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link fas fa-angle-right" role="button" data-slide="next"  href="#carouselExampleControls"></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="col-md-4">
+                    <aside class="site-bar">
+                        <div class="rating-wrap">
+                            <h2 class="site-bar__title title">Рейтинг</h2>
+                            <ul class="site-bar__rating-box rating-box">
+                                <li class="rating-box__item rating-item">
+                                    <a href="search-products.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <div class="star-rating__wrapper">
+                                                <div class="star-rating__sprite"><span style="width:100%" class="star-rating__sprite-rating"></span>
+                                                </div>
+                                                <span>5.0</span>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+
+
+
+
+                                </li>
+                                <li class="rating-box__item rating-item">
+                                    <a class="rating-item__link" href="search-products.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <div class="star-rating__wrapper">
+                                                <div class="star-rating__sprite"><span style="width:59%" class="star-rating__sprite-rating"></span>
+                                                </div>
+                                                <span>3.5</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank">В одну строку</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="rating-box__item rating-item">
+                                    <a href="search-products.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <div class="star-rating__wrapper">
+                                                <div class="star-rating__sprite"><span style="width:100%" class="star-rating__sprite-rating"></span>
+                                                </div>
+                                                <span>4.6</span>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+
+
+
+
+                                </li>
+                                <li class="rating-box__item rating-item">
+                                    <a href="search-products.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <div class="star-rating__wrapper">
+                                                <div class="star-rating__sprite"><span style="width:100%" class="star-rating__sprite-rating"></span>
+                                                </div>
+                                                <span>5.0</span>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+
+
+
+
+                                </li>
+                                <li class="rating-box__item rating-item">
+                                    <a href="search-products.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <div class="star-rating__wrapper">
+                                                <div class="star-rating__sprite"><span style="width:80%" class="star-rating__sprite-rating"></span>
+                                                </div>
+                                                <span>4.0</span>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my-applications-wrap">
+                            <h2 class="site-bar__title title">Мои заявки</h2>
+                            <ul class="site-bar__rating-box rating-box">
+                                <li class="rating-box__item rating-item">
+                                    <a href="my-applications.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <span class="rating-item__date-application">
+                                        <time datetime = "2020-09-15 12:51">15.09.2020 12:51</time>
+                                    </span>
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank rating-item__name-bank--application">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rating-box__item rating-item">
+                                    <a href="my-applications.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <span class="rating-item__date-application">
+                                        <time datetime = "2020-09-15 12:51">15.09.2020 12:51</time>
+                                    </span>
+
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank rating-item__name-bank--application">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rating-box__item rating-item">
+                                    <a href="my-applications.html">
+                                        <div class="rating-item__rating-lvl">
+                                            <div class="rating-item__icon">
+                                                <img src="img/icons/rating/obedinenniykapital.svg" alt="">
+                                            </div>
+                                            <span class="rating-item__date-application">
+                                        <time datetime = "2020-09-15 12:51">15.09.2020 12:51</time>
+                                    </span>
+
+                                        </div>
+                                        <div class="rating-item__name">
+                                            <span class="rating-item__name-bank rating-item__name-bank--application">Банк объединенный капитал</span><br>
+                                            <span class="rating-item__review">Отзывов: 7</span>
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <a class="all-application" href="my-applications.html">Все заявки</a>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div  class="full-blog-page__advertising advertising">Рекламный блок</div>
+
+        </div>
+    </main>
+
+
+    @@include('_footer.html')
+</div>
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-formhelpers-phone.js"></script>
+<script src="js/plagins.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>

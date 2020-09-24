@@ -34,7 +34,7 @@
     border-radius: 6px;
     display: flex;
 
-    @media (max-width: 1248px) {
+    @media (max-width: 1200px) {
       max-width: 1140px;
     }
     @media (max-width: 420px) {
@@ -84,13 +84,17 @@
 
     }
 
-    a{
-
+    a {
       font-weight: normal;
       font-size: 16px;
       line-height: 19px;
       color: #383838;
       margin-right: 10px;
+      &:hover, &:focus {
+        color: #FF4D4D;
+
+      }
+
     }
   }
   &__date {

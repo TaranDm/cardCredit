@@ -1,0 +1,43 @@
+.full-blog-page {
+  &__container {
+    margin-top: 50px;
+
+  }
+  &__advertising {
+    margin: 60px 0;
+  }
+}
+
+
+
+
+.full-blog {
+
+  &__title {
+
+  }
+
+  &__date {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+  &__slider {
+    margin-top: 22px;
+
+  }
+
+}
+.blog-slider {
+  .carousel-item {
+    background: rgba(56, 56, 56, 0.1);
+    border-radius: 6px;
+    padding: 16px 17px 20px 20px;
+  }
+
+  &__wrapper {
+
+  }
+
+
+}

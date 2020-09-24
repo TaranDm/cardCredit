@@ -1,53 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "Roboto-Light";
-  font-display: swap;
-  src: url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Medium";
-  font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Bold";
-  font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-LightItalic";
-  font-display: swap;
-  src: url("../fonts/Roboto-LightItalic.woff") format("woff"), url("../fonts/Roboto-LightItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-MediumItalic";
-  font-display: swap;
-  src: url("../fonts/Roboto-MediumItalic.woff") format("woff"), url("../fonts/Roboto-MediumItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /*шрифт по умолчанию */
 
 /*переменные*/
@@ -1317,7 +1269,7 @@ input.error + label.error + label {
 .pagination .page-link {
   width: 60px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: #9c9c9c !important;
 }
 
 .customer-reviews__item {
@@ -1637,8 +1589,7 @@ input.error + label.error + label {
 
   .selection .selection-btn {
     max-width: 176px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 26px auto;
   }
 
   .selection__btn-box {

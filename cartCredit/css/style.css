@@ -405,7 +405,7 @@ svg {
 .selection__wrapper .form-control:focus ~ .form-label,
 .selection__wrapper .form-control:not(:focus):valid ~ .form-label {
   top: 0px;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .selection__wrapper .form-group {
@@ -492,7 +492,7 @@ svg {
   color: #FF4D4D;
 }
 
-#city-error {
+.selection__form #city-error {
   margin-top: 64px;
   color: #FF4D4D;
 }
@@ -503,16 +503,20 @@ svg {
 }
 
 .required.form-control.error {
-  border-color: #f45a57;
+  color: #f45a57 !important;
 }
 
 input.error + label.error + label {
   top: 0px;
-  font-size: 10px;
+  font-size: 16px;
   color: #FF4D4D;
 }
 
 /*===================================*/
+
+.selection__search {
+  margin-bottom: 63px;
+}
 
 .selection__search p {
   margin-left: 120px;
@@ -1151,6 +1155,14 @@ input.error + label.error + label {
   border-color: #000;
 }
 
+.form-application .field-error input {
+  border-bottom: 1px solid #f45a57 !important;
+}
+
+.form-application .field-error label {
+  color: #f45a57 !important;
+}
+
 .bank-info__container {
   padding-top: 91px;
 }
@@ -1769,7 +1781,7 @@ input.error + label.error + label {
     margin-top: 34px;
   }
 
-  #city-error {
+  .selection__form #city-error {
     margin-top: 34px;
   }
 

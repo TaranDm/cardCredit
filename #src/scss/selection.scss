@@ -28,7 +28,7 @@
     .form-control:focus~.form-label,
     .form-control:not(:focus):valid~.form-label {
       top: 0px;
-      font-size: 10px;
+      font-size: 16px;
     }
 
     .form-group {
@@ -42,8 +42,6 @@
 
 
     }
-
-
   }
 
   &__container {
@@ -72,7 +70,6 @@
     }
     @media (max-width: 992px) {
       margin: 0;
-
     }
   }
 }
@@ -99,17 +96,17 @@
 .selection__title {
   margin-bottom: 40px;
 }
+.selection__form{
 
+}
 .selection__form input {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  //min-width: 300px;
   height: 91px;
   color: black;
-  //border: 3px solid rgba(56, 56, 56, 0.6);
   box-sizing: border-box;
   border-radius: 6px;
   @media (max-width: 768px) {
@@ -150,34 +147,36 @@
 
   }
 }
-#city-error{
-  margin-top: 64px;
-  color: #FF4D4D;
-  @media (max-width: 768px) {
-    margin-top: 34px;
-
+.selection__form {
+  #city-error{
+    margin-top: 64px;
+    color: #FF4D4D;
+    @media (max-width: 768px) {
+      margin-top: 34px;
+    }
   }
 }
+
 #income-error {
   margin-top: 64px;
   color: #FF4D4D;
   @media (max-width: 768px) {
     margin-top: 34px;
-
   }
 }
 .required.form-control.error {
-  border-color: #f45a57;
+  color: rgba(244, 90, 87, 06) !important;
 }
 input.error+label.error+label {
   top: 0px;
-  font-size: 10px;
+  font-size: 16px;
   color: #FF4D4D;
 }
 
 /*===================================*/
 
 .selection__search {
+  margin-bottom: 63px;
   p {
     margin-left: 120px;
     margin-top: 56px;

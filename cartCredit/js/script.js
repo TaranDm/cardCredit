@@ -1,5 +1,7 @@
 $(document).ready(function () {
     "use strict";
+
+
    /*=======================================*/
 /*Function for hiding and opening the search__link Block when scrolling*/
     $('#myCollapsible').collapse({
@@ -28,34 +30,12 @@ $(document).ready(function () {
     });
     /*=======================================*/
     /*========Block "selection" Form Validation===========*/
-    $('#myForm').validate({
-        rules: {
-            date: {
-                required: true,
-            },
-            income: {
-                required: true,
-            },
-            city: {
-                required: true,
-            },
-        },
-        messages: {
-            city: {
-                required: 'поле должно быть заполнено'
-            },
-            income: {
-                required: 'поле должно быть заполнено'
-            },
-            date: {
-                required: 'поле должно быть заполнено'
-            },
-        }
-    });
+
+
 
     $('.carousel').carousel({
         interval: false,
-    })
+    });
 
 
     $('.load-more').on('click', function(e) {
@@ -126,5 +106,80 @@ $(document).ready(function () {
 
 
 
+/*function validate*/
+$('#myForm').validate({
+    highlight: function(element) {
+        $(element).parent().addClass("field-error");
+    },
+    unhighlight: function(element) {
+        $(element).parent().removeClass("field-error");
+    },
+    rules: {
+        term: {
+            required: true,
+        },
+
+        date: {
+            required: true,
+        },
+        income: {
+            required: true,
+        },
+        city: {
+            required: true,
+        },
+        sum : {
+            required: true,
+        },
+        name : {
+            required: true,
+        },
+        last_name : {
+            required: true,
+        },
+        mail : {
+            required: true,
+            email: true,
+        },
+        region: {
+            required: true,
+        },
+        tell: {
+            required: true,
+        }
+    },
+    messages: {
+        city: {
+            required: 'поле должно быть заполнено'
+        },
+        income: {
+            required: 'поле должно быть заполнено'
+        },
+        date: {
+            required: 'поле должно быть заполнено'
+        },
+        sum: {
+            required: 'поле должно быть заполнено'
+        },
+        name: {
+            required: 'поле должно быть заполнено'
+        },
+        last_name: {
+            required: 'поле должно быть заполнено'
+        },
+        mail: {
+            required: 'поле должно быть заполнено'
+        },
+        region: {
+            required: 'поле должно быть заполнено'
+        },
+        tel: {
+            required: 'поле должно быть заполнено'
+        },
+        term: {
+            required: 'поле должно быть заполнено'
+        },
 
 
+    }
+});

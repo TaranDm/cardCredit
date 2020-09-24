@@ -34,16 +34,16 @@
     <section class="application-form">
         <div class="application-form__container _container">
             <h1 class="application-form__title title">Получить решение</h1>
-            <form>
+            <form id="myForm" class="form-application">
                 <div class="application-form__group group-application">
                     <div class=" application-form__item item-form-application">
                         <h2 class="application-form__title-group group-title">Срок и размер кредита</h2>
                         <label for="sum-credit">Сумма запрашиваемого кредита</label>
-                        <input type="text" class="form-control border-0 application-form__input" id="sum-credit" placeholder="">
+                        <input name="sum" required type="text" class="form-control border-0 application-form__input" id="sum-credit" placeholder="">
                     </div>
                     <div class=" application-form__item item-form-application">
                         <label for="sum-term">Срок кредитования</label>
-                        <input type="text" class="form-control border-0 application-form__input" id="sum-term" placeholder="">
+                        <input name="term" required type="text" class="form-control border-0 application-form__input" id="sum-term" placeholder="">
                     </div>
                 </div>
 
@@ -51,30 +51,30 @@
                     <div class=" application-form__item item-form-application">
                         <h2 class="application-form__title-group group-title">Адрес местожительства</h2>
                         <label for="region">Регион</label>
-                        <input type="text" class="form-control border-0 application-form__input" id="region" placeholder="">
+                        <input required name="region" type="text" class="form-control border-0 application-form__input" id="region" placeholder="">
                     </div>
                     <div class=" application-form__item item-form-application">
-                        <label for="city">Срок кредитования</label>
-                        <input type="text" class="form-control border-0 application-form__input" id="city" placeholder="">
+                        <label for="city">Населенный пункт</label>
+                        <input required name="city" type="text" class="form-control border-0 application-form__input" id="city" placeholder="">
                     </div>
                 </div>
                 <div class="application-form__group group-application">
                     <div class=" application-form__item item-form-application">
                         <h2 class="application-form__title-group group-title">Персональные данные</h2>
                         <label for="name">Имя</label>
-                        <input type="text" class="form-control border-0 application-form__input" id="name" placeholder="">
+                        <input required name="name" type="text" class="form-control border-0 application-form__input" id="name" placeholder="">
                     </div>
                     <div class=" application-form__item item-form-application">
                         <label for="surname">Фамилия</label>
-                        <input type="text" class="form-control border-0 application-form__input" id="surname" placeholder="">
+                        <input type="text" name="last_name" class="form-control border-0 application-form__input" id="surname" placeholder="">
                     </div>
                     <div class=" application-form__item item-form-application">
                         <label for="email">Email адрес</label>
-                        <input type="email" class="form-control border-0 application-form__input" id="email" placeholder="">
+                        <input type="email" name="mail" class="form-control border-0 application-form__input" id="email" placeholder="">
                     </div>
                     <div class=" application-form__item item-form-application">
                         <label for="phone">Мобильный телефон</label>
-                        <input type="tel" class="form-control border-0 application-form__input  bfh-phone"  id="phone" placeholder="" data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})">
+                        <input required name="tell" type="tel" class="form-control border-0 application-form__input  bfh-phone"  id="phone" placeholder="" data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})">
                         <div>
                             <input type="checkbox" id="check" name="check" />
                             <label class="form-check-label item-form-application__consent" for="check">

@@ -119,12 +119,10 @@
     min-width: 50px;
 
   }
-
 }
 .selection__form input:focus {
   /*border: 3px solid #FF4D4D;*/
   flex: 1 1 100%;
-
 }
 .form-control {
   width: 100%;
@@ -139,47 +137,47 @@
   line-height: 40px;
 }
 
-
 .field-error {
+   input  {
+    border: 3px solid rgba(255,77,77,.6)!important;
+    color: #FF4D4D!important;
+  }
+  label{
+    color: #FF4D4D!important;
+  }
+  .form-label {
+    color: #FF4D4D;
+  }
+  label.form-label {
+    top: 0px;
+    font-size: 16px;
+    color: #FF4D4D;
+  }
 
 }
 
 /*validated message*/
 #datepicker-error {
   margin-top: 64px;
-  color: #FF4D4D;
+
   @media (max-width: 768px) {
     margin-top: 34px;
-
   }
 }
 .selection__form {
   #city-error{
     margin-top: 64px;
-    color: #FF4D4D;
     @media (max-width: 768px) {
       margin-top: 34px;
     }
   }
 }
-
 #income-error {
   margin-top: 64px;
-  color: #FF4D4D;
   @media (max-width: 768px) {
     margin-top: 34px;
   }
 }
-.required.form-control.error {
-  color: rgba(244, 90, 87, 06) !important;
-}
-input.error+label.error+label {
-  top: 0px;
-  font-size: 16px;
-  color: #FF4D4D;
-}
-
-/*===================================*/
 
 .selection__search {
   margin-bottom: 63px;

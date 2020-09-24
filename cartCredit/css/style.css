@@ -437,31 +437,37 @@ svg {
   line-height: 40px;
 }
 
+.field-error input {
+  border: 3px solid rgba(255, 77, 77, 0.6) !important;
+  color: #FF4D4D !important;
+}
+
+.field-error label {
+  color: #FF4D4D !important;
+}
+
+.field-error .form-label {
+  color: #FF4D4D;
+}
+
+.field-error label.form-label {
+  top: 0px;
+  font-size: 16px;
+  color: #FF4D4D;
+}
+
 /*validated message*/
 
 #datepicker-error {
   margin-top: 64px;
-  color: #FF4D4D;
 }
 
 .selection__form #city-error {
   margin-top: 64px;
-  color: #FF4D4D;
 }
 
 #income-error {
   margin-top: 64px;
-  color: #FF4D4D;
-}
-
-.required.form-control.error {
-  color: #f45a57 !important;
-}
-
-input.error + label.error + label {
-  top: 0px;
-  font-size: 16px;
-  color: #FF4D4D;
 }
 
 /*===================================*/

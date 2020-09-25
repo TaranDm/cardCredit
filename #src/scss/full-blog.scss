@@ -18,13 +18,14 @@
   }
 
   &__date {
-    position: absolute;
+    display: block;
     margin-left: 20px;
-    margin-top: -10px;
+    margin-top: -12px;
+    font-style: italic;
+    font-size: 13px;
   }
   &__slider {
-    margin-top: 22px;
-
+    margin-top: 14px;
   }
 
 }

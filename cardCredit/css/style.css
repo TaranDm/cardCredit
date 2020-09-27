@@ -470,8 +470,6 @@ svg {
   margin-top: 64px;
 }
 
-/*===================================*/
-
 .selection__search {
   margin-bottom: 63px;
 }
@@ -1171,6 +1169,12 @@ svg {
   max-width: 300px;
 }
 
+.star-rating__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .star-rating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1187,7 +1191,7 @@ svg {
   text-indent: -999em;
   width: 70px;
   display: block;
-  margin: 2px 10px;
+  margin: 0px 10px;
 }
 
 .star-rating__sprite .star-rating__sprite-rating {
@@ -1196,6 +1200,54 @@ svg {
   float: left;
   height: 13px;
   padding: 3px 0;
+}
+
+.rating-area {
+  overflow: hidden;
+  width: 270px;
+  margin-bottom: 4px;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 54px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 50px;
+  line-height: 50px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+  position: relative;
 }
 
 .reviews-form__container {
@@ -1239,7 +1291,7 @@ svg {
 .reviews-form__content input,
 .reviews-form__content select {
   height: 91px;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .reviews-form__content textarea {
@@ -1272,10 +1324,14 @@ svg {
   margin-bottom: 60px;
 }
 
+.reviews-form__instruction {
+  padding-top: 71px;
+}
+
 .pagination .page-link {
   width: 60px;
   text-align: center;
-  color: #9c9c9c !important;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .customer-reviews__item {
@@ -1349,16 +1405,6 @@ svg {
 .customer-reviews__answer {
   margin-left: 45px;
   margin-top: 10px;
-}
-
-.star-rating__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.star-rating__wrapper .star-rating__sprite {
-  margin: 2px 4px 2px 0px;
 }
 
 .pagination {
